@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*navigation section*/
+#nav-bar {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px;
+    background-color: #2596be;
+    height: 75px;
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    width: 90px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    padding-top: 10px;
+}
+
+.nav-links {
+    margin-right: -600px;
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    background-color: #145369;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #041014;
+}
+
+/*1st image with its overlay*/
+.background img {
+    width: 1350px;
+    height: 620px;
+
+}
+
+#welcome {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: -274px;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.content h4 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+
+
+/*About Us*/
+#AboutUs {
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    max-width: 600px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.message h1 {
+    color: #8B4513;
+    font-size: 28px;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 10px;
+}
+
+.message p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.message button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #CD853F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message button:hover {
+    background-color: #A0522D;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+
+/* Products */
+#products {
+    padding: 50px 0;
+}
+
+.product-header h2{
+    border-bottom: 2px solid blue;
+    
+}
+
+.product-header h4 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+#items {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.item1, .item2, .item3, .item4 {
+    width: 23%;
+    text-align: center;
+}
+
+.item1 img, .item2 img, .item3 img, .item4 img {
+    width: 270px;
+    height: 250px;
+}
+
+.item1 h3, .item2 h3, .item3 h3, .item4 h3,
+.item1 h4, .item2 h4, .item3 h4, .item4 h4,
+.item1 button, .item2 button, .item3 button, .item4 button {
+    margin-top: 10px;
+}
+
+.item1 {
+    margin-left: 10px;
+}
+
+.item4 {
+    margin-right: 10px;
+}
+
+
+/*Gallery*/
+.gallery-header {
+    padding-top: 100px;
+}
+
+.gallery-header h2{
+    border-bottom: 2px solid blue;
+}
+
+.gallery-header p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+}
+
+.categories img {
+    width: 300px;
+    height: 220px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 60px;
+    background-color: #2596be;
+    color: black;
+    gap: 40px;
+}
+
+.About, .Contact {
+    width: 50%;
+}
+
+.About h3, .Contact h3 {
+    border-bottom: 2px solid blue;
+}
+
+.Contact p {
+    margin: 5px 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+}
