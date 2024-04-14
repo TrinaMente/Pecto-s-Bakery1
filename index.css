@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Domine", serif;
 }
 
 /*navigation section*/
@@ -77,15 +77,16 @@ button:hover {
 #welcome {
     position: relative;
     z-index: 1;
-    padding: 50px;
+    padding: 35px;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     margin-top: -274px;
 }
 
 .content h1 {
-    font-size: 36px;
-    color: #8B4513;
+    font-family: "Great Vibes", cursive;
+    font-size: 66px;
+    color: #145369;
     margin-bottom: 20px;
 }
 
@@ -100,7 +101,7 @@ button:hover {
 
 /*About Us*/
 #AboutUs {
-    padding: 120px;
+    padding: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,30 +109,30 @@ button:hover {
 
 .message {
     max-width: 600px;
-    margin-right: 50px;
-    text-align: justify;
 }
 
 .message h2 {
-    color: #8B4513;
+    color: black;
     font-size: 28px;
-    border-bottom: 2px solid #8B4513;
+    border-bottom: 2px solid#2596be;
     padding-bottom: 10px;
+    
 }
 
 .message p {
     font-size: 16px;
+    text-align: center;
     line-height: 1.6;
     color: #333;
+    padding-bottom: px;
 }
 
 .message button {
     display: block;
-    margin: 0 auto;
+    margin:auto;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #CD853F;
-    border: none;
+    background-color: #145369;  
     border-radius: 5px;
     color: white;
     cursor: pointer;
@@ -139,7 +140,7 @@ button:hover {
 }
 
 .message button:hover {
-    background-color: #A0522D;
+    background-color: black;
 }
 
 .image {
@@ -159,6 +160,9 @@ button:hover {
 /* Products */
 /*Settings for the small line at the bottom*/
 .product-header h2 {
+    font-size: 27px;
+    padding-bottom: 5px;
+    color: black;
     position: relative;
 }
 .product-header h2::before{
@@ -169,13 +173,14 @@ height: 3px;
 background: black;
 position: absolute;
 bottom: -8px;
-left: 44%;
+left: 41%;
 }
 
 .product-header h4 {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     font-weight: normal;
+    color: #333;
 }
 
 #items {
@@ -210,6 +215,9 @@ left: 44%;
 /*Gallery*/
 /*Settings for the small line at the bottom*/
 .gallery-header h2 {
+    font-size: 28px;
+    padding-bottom: 5px;
+    color: black;
     position: relative;
 }
 .gallery-header h2::before{
@@ -220,12 +228,13 @@ height: 3px;
 background: black;
 position: absolute;
 bottom: -8px;
-left: 40%;
+left: 38%;
 }
 
 .gallery-header p{
-    padding-top: 10px;
-    padding-bottom: 20px;
+    color: #333;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .categories {
@@ -237,8 +246,9 @@ left: 40%;
 }
 
 .categories img {
-    width: 300px;
-    height: 220px;
+    width: 400px;
+    height: 350px;
+    margin-bottom: 30px;
 }
 
 .categories li {
@@ -251,8 +261,8 @@ left: 40%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 220px;
+    width: 400px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease; 
 }
@@ -284,7 +294,6 @@ left: 40%;
 #footer {
     display: flex;
     justify-content: space-around;
-
     padding: 30px 60px;
     background-color: #2596be;
     color: black;
@@ -292,16 +301,35 @@ left: 40%;
     text-align: center;
 }
 
-.About, .Contact, .map {
-    width: calc(100%/3);
+.About, .Contact, .map iframe {
+    width: 450px;
+    height: 250px;
 }
 
-.About h3, .Contact h3 {
-    border-bottom: 2px solid blue;
+.About h5 {
+    font-weight: normal;
+    color: #333;
+}
+
+.About h3, .Contact h3, .map h3 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.About h3::before, .Contact h3::before, .map h3::before {
+    content: "";
+    display:block;
+    width: 55px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: -8px;
+    left: 42%;
 }
 
 .Contact p {
     margin: 5px 0;
+    color: #333;;
 }
 
 .social {
@@ -316,23 +344,5 @@ left: 40%;
 
 .social a {
     text-decoration: none;
-    color: black;
-}
-
-/*common settings*/
-#products, #gallery, #footer {
-    border-top: 2px solid black;
-    padding-top: 15px;
-    position:relative
-}
-
-#products::before, #gallery::before, #footer::before {
-    content: "";
-    display:block;
-    width: 50px;
-    height: 3px;
-    background: #2596be;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
+    color: #333;
 }
