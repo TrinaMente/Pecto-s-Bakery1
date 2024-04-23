@@ -5,11 +5,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
         <title>Pecto's Bakery</title>
     </head>
 
     <body>
+        <div id="pop-up-container">
+            <div id="pop-up">
+                <iframe id="Iframe" src="gallery.html" title="gallery-popup"></iframe>
+            </div>
+            
+            <div class="close-button">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+
         <div id="nav-bar">
             <div class="logo">
                 <img src="img/logo.png" alt="logo">
@@ -25,7 +40,14 @@
                 </ul>
             </div>
 
-            <button>Order Now</button>
+            <div class="buttons">
+                <button>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button>
+                    <i class="fa fa-heart"></i>
+                </button>
+            </div>
         </div>
 
         <div class="background">
@@ -48,22 +70,24 @@
         </div>
 
         <div id="AboutUs">
-            <div class="image">
-                <img src="img/2image.jpeg">
-            </div>
+            <div id="container-about">
+                <div class="image">
+                    <img src="img/2image.jpeg">
+                </div>
 
-            <div class="message">
-                <h2>The Heart and Heritage Behind Pecto's Bakery</h1>
-                <p>Driven by a commitment to quality, community, and 
-                    family values, we take pride in crafting delicious 
-                    pastries and breads using time-honored recipes 
-                    passed down through generations. With a dedicated 
-                    team of artisans and a spirit of continuous 
-                    improvement, we strive to delight our customers 
-                    with every slice, pastry, and confection that 
-                    leaves our ovens.<p>
+                <div class="message">
+                    <h2>The Heart and Heritage Behind Pecto's Bakery</h1>
+                    <p>Driven by a commitment to quality, community, and 
+                        family values, we take pride in crafting delicious 
+                        pastries and breads using time-honored recipes 
+                        passed down through generations. With a dedicated 
+                        team of artisans and a spirit of continuous 
+                        improvement, we strive to delight our customers 
+                        with every slice, pastry, and confection that 
+                        leaves our ovens.<p>
 
-                <button>Read More</button>
+                    <button>Read More</button>
+                </div>
             </div>
         </div>
 
@@ -74,108 +98,214 @@
             </div>
 
             <div id="items">
-                <ul class="row1">
+                <ul class="Specialties">
                     <li>
                         <img src="img/Apas.png">
                         <h3>Special Apas</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Egg Pie.png">
                         <h3>Special Egg Pie</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Ensaymada.png">
                         <h3>Special Ensaymada</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Marquina.png">
                         <h3>Special Marquina</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
-                </ul>
-                <ul class="row2">
                     <li>
                         <img src="img/Broas.png">
                         <h3>Broas</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Camachile.png">
                         <h3>Camachile</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Pianono.png">
                         <h3>Pianono</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Pancake.png">
                         <h3>Pancake</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
-                </ul>
-                <ul class="row3">
                     <li>
                         <img src="img/Pandesal.png">
                         <h3>Pandesal</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/biscuit1.png">
                         <h3>Otap</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/crackers1.png">
                         <h3>Cookies</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/crackers3.png">
                         <h3>Pan De Yuca</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
-                </ul>
-                <ul class="row4">
                     <li>
                         <img src="img/crackers2.png">
                         <h3>Cheese Crackers</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/crackers4.png">
                         <h3>Balat Lechon</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Meringue.png">
                         <h3>Meringue</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <img src="img/Rosquillos.png">
                         <h3>Rosquillos</h3>
                         <h4>Price</h4>
-                        <button>Order</button>
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <button>
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -183,30 +313,30 @@
 
         <div id="gallery">
             <div class="gallery-header">
-                <center><h2>Our Delicious Creations</h2>
-                <p>Take a visual journey through our mouth-watering assortment of pastries and breads.</p></center>
+                <h2>Our Delicious Creations</h2>
+                <p>Take a visual journey through our mouth-watering assortment of pastries and breads.</p>
             </div>
 
             <div class="categories">
                 <ul class="gallery-pictures">
-                    <li>
+                    <li id="crackers">
                         <img src="img/2image.jpeg">
                         <div class="crackersandbiscuits-overlay">
-                            <a href="#">Crackers and Biscuits</a>
+                            <a>Biscuits and Crackers</a>
                         </div>
                     </li>
 
-                    <li>
+                    <li id="bread">
                         <img src="img/bread2.png">
                         <div class="bread-overlay">
-                            <a href="#">Breads</a>
+                            <a>Breads</a>
                         </div>
                     </li>
 
-                    <li>
+                    <li id="desserts">
                         <img src="img/desserts.png">
                         <div class="dessert-overlay">
-                            <a href="#">Desserts</a>
+                            <a>Desserts</a>
                         </div>
                     </li>
                 </ul>
@@ -216,31 +346,29 @@
         <div id="footer">
             <div class="About">
                 <h3>About</h3>
-                <h5>Lorem Ipsum is simply dummy text of the printing 
+                <p>Lorem Ipsum is simply dummy text of the printing 
                 and typesetting industry. Lorem Ipsum has been the 
                 industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and 
                 scrambled it to make a type specimen book. It has 
                 survived not only five centuries, but also the leap 
                 into electronic typesetting, remaining essentially 
-                unchanged. It was popularised in the 1960s with the 
-                release of Letraset sheets containing Lorem Ipsum 
-                passages, and more recently with desktop publishing 
-                software like Aldus PageMaker including versions of 
-                Lorem Ipsum.</h5>
+                unchanged.</p>
             </div>
 
             <div class="Contact Us">
                 <h3>Contact Us</h3>
                 <p>If you have any questions or inquiries, feel 
                     free to reach out to us at:</p>
-                <p>Phone: (042) 540 8838</p>
-                <p>Email: info@pectosbakery.com</p>
+                <pre><p> 
+(042) 540 4366/8838
+  0949 9931209
+               </p></pre>
                 <p>We're also available on social media</p>
 
                 <div class="social">
-                    <a href="https://www.facebook.com/pectosbakery" alt="facebook"><img src="img/facebook icon.png"></a><a href="https://www.facebook.com/pectosbakery">Pecto's Bakery</a></p>
-                    <a href="https://www.instagram.com/pectosbakerylucban/?hl=en" alt="instagram"><img src="img/instagram.png"></a> <a href="https://www.instagram.com/pectosbakerylucban/?hl=en">pectosbakerylucban</a></p>
+                    <a href="https://www.facebook.com/pectosbakery" alt="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.facebook.com/pectosbakery">&nbsp;Pecto's Bakery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><p></p>
+                    <a href="https://www.instagram.com/pectosbakerylucban/?hl=en" alt="instagram"><i class="fa-brands fa-square-instagram"></i></a> <a href="https://www.instagram.com/pectosbakerylucban/?hl=en">&nbsp;pectosbakerylucban</a><p></p>
                 </div>
             </div>
 
@@ -248,6 +376,11 @@
                 <h3>Location</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4002.955696627939!2d121.551927338538!3d14.11438869432623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd53f5f956fd83%3A0xaf7ed935b3c90896!2sPecto&#39;s%20Bakery!5e0!3m2!1sen!2sph!4v1712140628207!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
+
+        <div id="copyright">
+            <p>Copyright © 2023-2024 CpE06 Online Technologies.</p>
+            <p>All Rights Reserved</p>
         </div>
         
     </body>
