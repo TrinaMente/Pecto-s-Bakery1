@@ -25,33 +25,51 @@
             </div>
         </div>
 
-        <div id="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
+        <div id="scroll-top">
+            <div id="arrow-up">
+                <i class="fa fa-arrow-circle-up"></i>
             </div>
+        </div>
 
-            <div class="nav-links">
-                <ul class="icons">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+        <div id="nav-bar">
+            <nav class="main-nav hamburger-menu">
+				<div id="main_menu">
+					<input id="menu-toggle" type="checkbox" />
+					<label class='menu-button-container' for="menu-toggle">
+						<div class='menu-button'>
+
+                        </div>
+						<span></span>
+					</label>
+
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+
+                    <div class="nav-links">
+                        <ul class="icons">
+                            <li><a id="Home">Home</a></li>
+                            <li><a id="About-us">About Us</a></li>
+                            <li><a id="Product">Products</a></li>
+                            <li><a id="Gallery">Gallery</a></li>
+                            <li><a id="Contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
             <div class="buttons">
-                <button>
+                <button class="cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </button>
-                <button>
+                <button class="fav">
                     <i class="fa fa-heart"></i>
                 </button>
             </div>
         </div>
 
         <div class="background">
-            <img src="img/bread-bg.png" alt="front-image">
+            <img src="img/Bg.jpg" alt="front-image">
         </div>
 
         <div id="welcome">
@@ -86,7 +104,7 @@
                         with every slice, pastry, and confection that 
                         leaves our ovens.<p>
 
-                    <button>Read More</button>
+                    <button id="ReadMore">Read More</button>
                 </div>
             </div>
         </div>
@@ -344,32 +362,30 @@
         </div>
 
         <div id="footer">
-            <div class="About">
-                <h3>About</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing 
-                and typesetting industry. Lorem Ipsum has been the 
-                industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book. It has 
-                survived not only five centuries, but also the leap 
-                into electronic typesetting, remaining essentially 
-                unchanged.</p>
-            </div>
-
+            
             <div class="Contact Us">
                 <h3>Contact Us</h3>
                 <p>If you have any questions or inquiries, feel 
                     free to reach out to us at:</p>
-                <pre><p> 
-(042) 540 4366/8838
-  0949 9931209
-               </p></pre>
+                <p id="number"> 
+                    (042) 540 4366/8838<br>
+                    0949 9931209
+                </p>
                 <p>We're also available on social media</p>
-
-                <div class="social">
-                    <a href="https://www.facebook.com/pectosbakery" alt="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.facebook.com/pectosbakery">&nbsp;Pecto's Bakery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><p></p>
-                    <a href="https://www.instagram.com/pectosbakerylucban/?hl=en" alt="instagram"><i class="fa-brands fa-square-instagram"></i></a> <a href="https://www.instagram.com/pectosbakerylucban/?hl=en">&nbsp;pectosbakerylucban</a><p></p>
+                    
+                    <div class="social">
+                        <a href="https://www.facebook.com/pectosbakery" alt="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.facebook.com/pectosbakery">&nbsp;Pecto's Bakery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><p></p>
+                        <a href="https://www.instagram.com/pectosbakerylucban/?hl=en" alt="instagram"><i class="fa-brands fa-square-instagram"></i></a> <a href="https://www.instagram.com/pectosbakerylucban/?hl=en">&nbsp;pectosbakerylucban</a><p></p>
+                    </div>
                 </div>
+                
+            <div class="About">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post">
+                    <label for="email">Enter your email address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    <input type="submit" value="Subscribe">
+                </form>
             </div>
 
             <div class="map">
@@ -379,8 +395,7 @@
         </div>
 
         <div id="copyright">
-            <p>Copyright © 2023-2024 CpE06 Online Technologies.</p>
-            <p>All Rights Reserved</p>
+            <p>Copyright © 2023-2024 Trina Alyssa Mente & Aizhar Jamilano - CpE06 Online Technologies. All Rights Reserved</p>
         </div>
         
     </body>

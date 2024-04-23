@@ -1,0 +1,88 @@
+body {
+    background-color: white;
+    height: 90vh;
+    width: 190vh;
+    overflow: hidden;
+}
+
+body > #AboutUs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#mission, #vision, #values, #history {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#mission>div, 
+#vision>div, 
+#values>div, 
+#history>div {
+    width:50%;
+
+}
+
+.slide *{
+    display: none;
+    background-color: rgb(9, 140, 255);
+}
+
+.active *{
+    display: block;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutUs-container img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#button-container {
+    position: fixed;
+    z-index: 1;
+    display: inline;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+}
+
+#button {
+    position: relative;
+    width: 100%;
+}
+
+#button > button > .fa {
+    font-size: 40px;
+}
+
+#button > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#button > .left {
+    position: absolute;
+    left:0;
+}
+
+#button > .right {
+    position: absolute;
+    right:0;
+}
