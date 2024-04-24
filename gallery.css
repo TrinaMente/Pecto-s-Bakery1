@@ -23,7 +23,7 @@
 }
 
 .buttons {
-    height: 40px;
+    height: auto;
     width: auto;
     color: #666;
     font-size: 20px;
@@ -35,8 +35,8 @@
 }
 
 .buttons.active {
-    background: #145369;
-    color: #fff;
+    background: #ffe6a7;
+    color: #b75408;
 }
 
 .image-container {

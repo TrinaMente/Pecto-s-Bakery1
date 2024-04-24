@@ -5,38 +5,45 @@ $(document).ready(function(){
     $('.cart').on('click', function(){
         Gallery.fadeIn();
         Iframe.attr("src", "Cart.html");
+        $("body").css("overflow", "hidden")
      });
 
      $('.fav').on('click', function(){
         Gallery.fadeIn();
         Iframe.attr("src", "Favorites.html");
+        $("body").css("overflow", "hidden")
      });
 
     $('#ReadMore').on('click', function(){
         Gallery.fadeIn();
         Iframe.attr("src", "AboutUs.html");
+        $("body").css("overflow", "hidden")
      });
 
     $('#crackers').on('click', function(){
        Gallery.fadeIn();
        Iframe.attr("src", "gallery.html?data-filter=BiscuitsAndCrackers");
+       $("body").css("overflow", "hidden")
     });
 
     $('#bread').on('click', function(){
         Gallery.fadeIn();
         Iframe.attr("src", "gallery.html?data-filter=Bread");
+        $("body").css("overflow", "hidden")
     });
 
     $('#desserts').on('click', function(){
         Gallery.fadeIn();
         Iframe.attr("src", "gallery.html?data-filter=Desserts");
+        $("body").css("overflow", "hidden")
     });
 
     $('.close-button').on('click', function(){
         Gallery.fadeOut();
+        $("body").css("overflow", "auto")
     });
 
-    $('#Home, #scroll-top').on('click', function(){
+    $('#Home').on('click', function(){
         $('body, html').animate({
             scrollTop: $('body').offset().top
         }, 600);

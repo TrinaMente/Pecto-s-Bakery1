@@ -9,17 +9,17 @@ body > #AboutUs-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 30px;
-    margin-left: 20px;
+    padding: 60px;
     height: 100%;
     width: 100%;
+
 }
 
 #mission, #vision, #values, #history {
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    
+    gap: 1px;
+    /* gap: 30px; */
 }
 
 #mission>div, 
@@ -27,22 +27,33 @@ body > #AboutUs-container {
 #values>div, 
 #history>div {
     width:50%;
-
+    
 }
 
 .slide *{
     display: none;
-    background-color: rgb(9, 140, 255);
+}
+
+.slide {
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.mission-container, .vision-container, .values-container, .history-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .active *{
-    display: block;
+    display: flex;
 }
 
 .image{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: 300px;
 }
 
 #AboutUs-container img {
@@ -85,4 +96,32 @@ body > #AboutUs-container {
 #button > .right {
     position: absolute;
     right:0;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1091px){
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        padding: 0; /* Remove padding to occupy full width */
+        margin: 0; /* Remove margin to occupy full width */
+      }
+
+    body > #AboutUs-container {
+        width: 90%;
+        padding: 0;
+    }
+    
+    .slide{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
