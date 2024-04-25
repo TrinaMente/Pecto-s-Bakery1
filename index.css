@@ -480,6 +480,7 @@ left: 38%;
 
 .categories li:hover a {
     opacity: 1;
+    cursor: pointer;
 }
 .gallery-pictures>li>div>a {
     font-size: 150%;
@@ -791,7 +792,7 @@ input[type="email"]::placeholder{
         width: 100%;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
     body {
         font-size: 14px;
         width: 100%;
@@ -802,6 +803,11 @@ input[type="email"]::placeholder{
     .specialties li {
         width: 100%;
     }
+
+    #pop-up > div > iframe {
+        width: 40vh;
+    }
+
 
 }
 @media screen and (max-width: 311px) {

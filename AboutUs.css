@@ -3,6 +3,10 @@ body {
     height: 90vh;
     width: 190vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
 }
 
 body > #AboutUs-container {
@@ -10,16 +14,18 @@ body > #AboutUs-container {
     justify-content: center;
     align-items: center;
     padding: 60px;
-    height: 100%;
     width: 100%;
-
 }
 
 #mission, #vision, #values, #history {
     display: flex;
-    
     gap: 1px;
-    /* gap: 30px; */
+    justify-content: center;
+    align-items: center;
+}
+
+#mission, #vission, #values{
+
 }
 
 #mission>div, 
@@ -27,7 +33,10 @@ body > #AboutUs-container {
 #values>div, 
 #history>div {
     width:50%;
-    
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide *{
@@ -51,17 +60,20 @@ body > #AboutUs-container {
 .image{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 300px;
     height: 300px;
+    
 }
 
 #AboutUs-container img {
     width: 300px;
     height: 300px;
-    margin: 0 auto;
     object-fit: cover;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.864);
 }
 
 #button-container {
@@ -123,5 +135,27 @@ body > #AboutUs-container {
         flex-wrap: wrap-reverse;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 1053px){
+    #mission, #vision, #values {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    #history {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #mission>div, #vision>div, #values>div, #history>div {
+        width: 70%;
     }
 }
