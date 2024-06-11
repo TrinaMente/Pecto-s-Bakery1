@@ -1,6 +1,18 @@
 $(document).ready(function(){
     var Gallery = $('#pop-up-container');
     var Iframe = $('#Iframe');
+    
+    $('#loginBtn').on('click', function(){
+        Gallery.fadeIn();
+        Iframe.attr("src", "LogIn.html");
+        $("body").css("overflow", "hidden")
+     });
+
+     $('#signUpBtn').on('click', function(){
+        Gallery.fadeIn();
+        Iframe.attr("src", "LogIn.html");
+        $("body").css("overflow", "hidden")
+     });
 
     $('.cart').on('click', function(){
         Gallery.fadeIn();
@@ -72,6 +84,4 @@ $(document).ready(function(){
             scrollTop: $('#footer').offset().top - 160
         }, 600);
     })
-
-
 })

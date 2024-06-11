@@ -3,6 +3,7 @@ $(document).ready(function(){
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(name);
     }
+
     var filterParam = getQueryParam('data-filter');
 
         if(filterParam) {

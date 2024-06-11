@@ -29,7 +29,7 @@
     height: 90vh;
     width: 180vh;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 #pop-up > div {
@@ -561,6 +561,14 @@ input[type="email"]::placeholder{
     color: white;
 }
 
+.login-signUp{
+    padding-top: 9px;
+}
+
+#signUpBtn{
+    margin-left: 10px;
+}
+
 .Contact p{
     margin: 5px 0;
     color: #ffffffa1;
@@ -594,6 +602,53 @@ input[type="email"]::placeholder{
 
 /*MEDIA QUERIES*/
 
+@media screen and (max-width: 2455px) {
+    .nav-links {
+        margin: 0;
+        
+    }
+    .background img {
+        margin-top: 30px;
+    }
+    #nav-bar {
+        padding: 20px 10px 10px;
+        display: relative;
+
+    }
+    
+    #nav-bar .logo img {
+        margin-top: 10px;
+    }
+
+    #pop-up > div > iframe {
+        width: 100vh;
+    }
+    
+}
+
+@media screen and (max-width: 1321px) {
+    .nav-links {
+        margin: 0;
+        
+    }
+    .background img {
+        margin-top: 30px;
+    }
+    #nav-bar {
+        padding: 20px 10px 10px;
+        display: relative;
+
+    }
+    
+    #nav-bar .logo img {
+        margin-top: 10px;
+    }
+
+    #pop-up > div > iframe {
+        width: 100vh;
+    }
+}
+
 @media screen and (max-width: 1173px) {
     .nav-links {
         margin: 0;
@@ -611,7 +666,10 @@ input[type="email"]::placeholder{
     #nav-bar .logo img {
         margin-top: 10px;
     }
-    
+
+    #pop-up > div > iframe {
+        width: 100vh;
+    }
 }
 
 @media  screen and (max-width: 1093px) {
