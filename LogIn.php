@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+include 'connect.php';
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +23,7 @@
     <body>
         <div id="main-container">
             <div id="login-wrapper" class="form-container">
-                <form>
+                <form method="post" action="register.php">
                     <h1>Login</h1>
 
                     <div class="inputbox">
@@ -43,7 +50,7 @@
             </div>
 
             <div id="sign-up-wrapper" class="form-container">
-                <form>
+                <form method="post" action="register.php">
                     <h1>Create an Account</h1>
     
                     <div class="inputbox">
