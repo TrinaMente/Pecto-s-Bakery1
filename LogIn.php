@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+include 'connect.php';
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,22 +23,22 @@
     <body>
         <div id="main-container">
             <div id="login-wrapper" class="form-container">
-                <form>
+                <form method="post" action="register.php">
                     <h1>Login</h1>
 
                     <div class="inputbox">
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Email" name="email" id="email" required>
                     </div>
 
                     <div class="inputbox">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" name="password" id="password" required>
                     </div>
 
                     <div class="remember-forgot">
                         <a href="#">Forgot Password?</a>
                     </div>
 
-                    <button type="button" id="loginBtn">Login</button>
+                    <button type="submit" id="loginBtn">Login</button>
 
                     <div class="no-account">
                         <p>Don't have an account?
@@ -43,26 +50,30 @@
             </div>
 
             <div id="sign-up-wrapper" class="form-container">
-                <form>
+                <form method="post" action="register.php">
                     <h1>Create an Account</h1>
     
                     <div class="inputbox">
-                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="First name" name="firstname" id="firstname" required>
                     </div>
     
                     <div class="inputbox">
-                        <input type="text" placeholder="Surname" required>
-                    </div>
-    
-                    <div class="inputbox">
-                        <input type="text" placeholder="Email address" required>
+                        <input type="text" placeholder="Surname" name="lastname" id="lastname" required>
                     </div>
 
                     <div class="inputbox">
-                        <input type="password" placeholder="Password" required>
+                        <input type="text" placeholder="Username" name="username" id="username" required>
+                    </div>
+    
+                    <div class="inputbox">
+                        <input type="text" placeholder="Email" name="email" id="email" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="password" placeholder="Password" name="createPassword" id="createPassword" required>
                     </div>
                     
-                    <button type="button" id="signUpBtn">Sign-Up</button>
+                    <button type="submit" id="signUpBtn">Sign-Up</button>
     
                     <div class="have-account">
                         <p>Already have an account?
